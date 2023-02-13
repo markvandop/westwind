@@ -5,3 +5,15 @@ label.form-label {
 button[type="submit"] {
   margin-top: 1rem;
 }
+
+.contact-info {
+  margin-top: 1rem;
+  @media (min-width: 768px) {
+    margin-top: 0rem;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+    transform: scale(1.05);
+  }
+}

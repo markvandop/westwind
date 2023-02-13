@@ -4,6 +4,7 @@ import { HomePage } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import { Testimonials } from "./pages/Testimonials";
 import MainNavbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "react-bootstrap";
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="/contact" exact component={Contact} />
         <Route path="/testimonials" exact component={Testimonials} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   </ThemeProvider>
 );

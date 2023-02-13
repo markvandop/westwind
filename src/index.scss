@@ -8,9 +8,16 @@ body {
 
 .App-main {
   background-color: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+p,
+.footer-copyright {
+  color: #595959;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
 }
 
 .btn-primary,
@@ -28,4 +35,16 @@ body {
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 2px;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  @media (min-width: 768px) {
+    margin-top: 0rem;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+    transform: scale(1.05);
+  }
 }

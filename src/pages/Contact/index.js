@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Card } from "react-bootstrap";
+import { HiMail, HiPhone } from "react-icons/hi";
 import "./style.scss";
 
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    tel: "",
+    address: "",
+    city: "",
     message: "",
   });
 
@@ -25,7 +29,7 @@ export function Contact() {
   return (
     <div className="container">
       <main className="App-main">
-        <h3 className="mb-4">Contact</h3>
+        <h3 className="mb-3">Contact</h3>
         <Row className="justify-content-center">
           <Col md={8}>
             <Form onSubmit={handleSubmit}>
@@ -51,9 +55,9 @@ export function Contact() {
               <Form.Group controlId="formPhone">
                 <Form.Label>Phone:</Form.Label>
                 <Form.Control
-                  type="phone"
-                  name="phone"
-                  value={formData.phone}
+                  type="tel"
+                  name="tel"
+                  value={formData.tel}
                   onChange={handleInputChange}
                 />
               </Form.Group>
@@ -61,7 +65,7 @@ export function Contact() {
               <Form.Group controlId="formAddress">
                 <Form.Label>Address:</Form.Label>
                 <Form.Control
-                  type="address"
+                  type="text"
                   name="address"
                   value={formData.address}
                   onChange={handleInputChange}
@@ -71,7 +75,7 @@ export function Contact() {
               <Form.Group controlId="formCity">
                 <Form.Label>City:</Form.Label>
                 <Form.Control
-                  type="city"
+                  type="text"
                   name="city"
                   value={formData.city}
                   onChange={handleInputChange}
@@ -92,6 +96,20 @@ export function Contact() {
                 Request a free quote
               </Button>
             </Form>
+          </Col>
+          <Col md={4}>
+            <Card className="contact-info">
+              <Card.Body>
+                <Card.Title>Our Information</Card.Title>
+                <Card.Text>
+                  <HiMail /> info@westwindpm.co
+                </Card.Text>
+                <Card.Text>
+                  <HiPhone />
+                  (604) 773-1238
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </main>

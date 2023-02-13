@@ -83,7 +83,16 @@ export function HomePage() {
             </div>
           </div>
         </div>
+        <div
+          style={{
+            marginTop: "-1rem",
+            height: "1rem",
+            borderRadius: ".25rem .25rem 0 0",
+            backgroundColor: "white",
+          }}
+        ></div>
       </header>
+
       <div className="container">
         <main className="App-main">
           <h3>Serving the Lower Mainland</h3>
@@ -117,6 +126,12 @@ export function HomePage() {
                 </Card.Body>
               </Card>
             ))}
+          </div>
+
+          <div className="mt-4 mb-3 text-center">
+            <Button as={Link} to="contact">
+              Request a Free Quote
+            </Button>
           </div>
         </main>
       </div>
