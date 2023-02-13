@@ -5,7 +5,6 @@ import "./style.scss";
 import logo from "../../images/westwind_logo_white_text.svg";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 const MainNavbar = () => {
   return (
@@ -20,14 +19,14 @@ const MainNavbar = () => {
             <Nav.Link as={Link} to="/">
               Our services
             </Nav.Link>
-            <Nav.Link as={Link} to="/testimonials">
+            {/* <Nav.Link as={Link} to="/testimonials">
               Testimonials
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Nav className="ml-auto flex ">
             <Nav.Link href="tel:6047731238">(604) 773-1238</Nav.Link>
             <Nav.Link as={Link} to="/contact">
-              Get a estimate
+              Request a free quote
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

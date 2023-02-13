@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import "./style.scss";
 
 export function Contact() {
@@ -89,7 +89,7 @@ export function Contact() {
                 />
               </Form.Group>
               <Button variant="primary" type="submit">
-                Submit
+                Request a free quote
               </Button>
             </Form>
           </Col>

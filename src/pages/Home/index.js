@@ -1,5 +1,6 @@
 //import logo from '../../logo.svg';
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import hedge from "../../images/hedge_bg.png";
 import hedgeTrimming from "../../images/services/hedge_trimming.jpeg";
 import lawnMower from "../../images/services/lawn_mower.jpeg";
@@ -98,7 +99,9 @@ export function HomePage() {
             because of this.
           </p>
           <div className="mb-3 text-center">
-            <Button>Get an estimate</Button>
+            <Button as={Link} to="contact">
+              Request a Free Quote
+            </Button>
           </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
