@@ -13,13 +13,11 @@ const App = () => (
   >
     <BrowserRouter>
       <MainNavbar />
-      <div class="container">
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/testimonials" exact component={Testimonials} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/testimonials" exact component={Testimonials} />
+      </Switch>
     </BrowserRouter>
   </ThemeProvider>
 );
