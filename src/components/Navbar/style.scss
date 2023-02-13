@@ -1,0 +1,24 @@
+.navbar {
+  justify-content: start;
+  gap: 1.5rem;
+  color: white;
+  background-color: #363636;
+  align-items: center;
+  padding: 0.5rem;
+
+  img {
+    width: 220px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    &:active,
+    &:focus {
+      color: white;
+    }
+    &:hover {
+      color: #7bb03c;
+    }
+  }
+}

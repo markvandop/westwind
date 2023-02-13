@@ -1,18 +1,27 @@
-import React from 'react';
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { HomePage } from './pages/Home';
-import { PageTwo } from './pages/Page2';
-import Navbar from './components/Navbar/Navbar'
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HomePage } from "./pages/Home";
+import { Contact } from "./pages/Contact";
+import { Testimonials } from "./pages/Testimonials";
+import MainNavbar from "./components/Navbar/Navbar";
+import { ThemeProvider } from "react-bootstrap";
 
 const App = () => (
-  <BrowserRouter>
-  <Navbar />
-    <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/page2" exact component={PageTwo} />
-    </Switch>
-  </BrowserRouter>
+  <ThemeProvider
+    breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+    minBreakpoint="xxs"
+  >
+    <BrowserRouter>
+      <MainNavbar />
+      <div class="container">
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/testimonials" exact component={Testimonials} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+  </ThemeProvider>
 );
 
 export default App;
