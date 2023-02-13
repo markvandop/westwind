@@ -109,7 +109,7 @@ export function HomePage() {
           </p>
           <div className="mb-3 text-center">
             <Button as={Link} to="contact">
-              Request a Free Quote
+              Request a free quote
             </Button>
           </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
@@ -130,7 +130,7 @@ export function HomePage() {
 
           <div className="mt-4 mb-3 text-center">
             <Button as={Link} to="contact">
-              Request a Free Quote
+              Request a free quote
             </Button>
           </div>
         </main>
