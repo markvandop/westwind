@@ -17,4 +17,15 @@
     color: #595959;
     font-size: 0.875rem;
   }
+
+  img {
+    aspect-ratio: 2/1;
+  }
+}
+
+.bg-image {
+  height: 200px;
+  @media (min-width: 768px) {
+    height: 300px;
+  }
 }

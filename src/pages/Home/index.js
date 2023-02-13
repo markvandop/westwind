@@ -1,5 +1,13 @@
 //import logo from '../../logo.svg';
-import { Card, ListGroup } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+import hedge from "../../images/hedge_bg.png";
+import hedgeTrimming from "../../images/services/hedge_trimming.jpeg";
+import lawnMower from "../../images/services/lawn_mower.jpeg";
+import shrubPruning from "../../images/services/shrub_pruning.jpeg";
+import weeding from "../../images/services/weeding.jpeg";
+import yardCleanup from "../../images/services/yard_cleanup.jpeg";
+import multch from "../../images/services/multch.jpeg";
+import washing from "../../images/services/washing.jpeg";
 import "./style.scss";
 
 export function HomePage() {
@@ -7,42 +15,44 @@ export function HomePage() {
     {
       title: "Lawn Mowing",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Our lawn care service offers expert maintenance of a property's grass through efficient and reliable cutting, resulting in a well-manicured lawn.",
+      image: lawnMower,
     },
     {
       title: "Spring Yard Cleanup",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Spring yard cleanup involves thorough removal of winter debris and preparation of a property's lawn and garden for the growing season",
+      image: yardCleanup,
     },
     {
       title: "Shrub Pruning",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Shrub pruning is a specialized service that involves the expert trimming and shaping of shrubs and bushes to maintain their health, appearance, and promote new growth",
+      image: shrubPruning,
     },
     {
       title: "Hedge Trimming",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Hedge trimming is a service that involves the precise cutting and shaping of hedges to maintain their desired appearance and promote healthy growth",
+      image: hedgeTrimming,
     },
     {
       title: "Weeding",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Weeding is a service that involves the removal of unwanted plants from a property's lawn and garden to maintain a pristine appearance and promote the growth of desired vegetation",
+      image: weeding,
     },
     {
       title: "Flat Surface Power Washing",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Flat surface power washing is a service that utilizes high-pressure water to effectively remove dirt, grime, and other buildup from flat surfaces such as driveways, sidewalks, and patios",
+      image: washing,
     },
     {
-      title: "Fertilizing",
+      title: "Fertilizing, Soil and Mulch",
       description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
-    },
-    {
-      title: "Soil and Mulch",
-      description:
-        "Our lawn care professionals have the experience to all your property maintenance needs",
+        "Fertilizing, soil and mulch services involve the application of nutrients, soil improvement, and the placement of organic or inorganic materials to enhance the health and appearance of a property's lawn and garden",
+      image: multch,
     },
   ];
 
@@ -52,9 +62,7 @@ export function HomePage() {
         <div
           className="p-5 text-center bg-image"
           style={{
-            backgroundImage:
-              "url('https://cdn.midjourney.com/32425e72-066e-4a8a-b064-90d95be099b5/grid_0.png')",
-            height: 400,
+            backgroundImage: `url(${hedge})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 50%",
             backgroundRepeat: "no-repeat",
@@ -77,28 +85,29 @@ export function HomePage() {
       </header>
       <div className="container">
         <main className="App-main">
-          <h3>Custom Maintenance Programs</h3>
+          <h3>Serving the Lower Mainland</h3>
           <p>
             Westwind Property Maintenance is committed to offering complete
             services to satisfy all of your landscaping and property upkeep
             requirements. We are dedicated to using the most up-to-date methods
             and tools to meet and surpass your expectations. We offer the
             knowledge and tools necessary to execute any project, from routine
-            grass maintenance to a full landscape restoration.
+            grass maintenance to a landscape restoration.We are aware that every
+            property is different and needs a customised strategy. We provide
+            individualised services that are tailored to your unique demands
+            because of this.
           </p>
-          <p>
-            We are aware that every property is different and needs a customised
-            strategy. We provide individualised services that are tailored to
-            your unique demands because of this. Our staff will collaborate
-            closely with you to comprehend your goals and develop a plan that
-            will help you achieve your landscaping and property management
-            objectives.
-          </p>
+          <div className="mb-3 text-center">
+            <Button>Get an estimate</Button>
+          </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
             {items.map((item, index) => (
               <Card>
-                <Card.Img variant="top" src="https://placehold.co/600x300" />
+                <Card.Img
+                  variant="top"
+                  src={item.image ? item.image : "https://placehold.co/600x300"}
+                />
                 <Card.Body>
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.description}</Card.Text>

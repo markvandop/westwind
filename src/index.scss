@@ -12,3 +12,20 @@ body {
   padding: 1rem;
   margin-top: 1.5rem;
 }
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #7bb03c;
+  border-color: #7bb03c;
+  &:hover {
+    background-color: #638d30;
+    border-color: #638d30;
+  }
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 2px;
+}

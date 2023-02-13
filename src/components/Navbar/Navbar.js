@@ -9,7 +9,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const MainNavbar = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar className="navbar-dark" expand="lg">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Westwind Property Management logo" />
@@ -25,9 +25,7 @@ const MainNavbar = () => {
             </Nav.Link>
           </Nav>
           <Nav className="ml-auto flex ">
-            <Nav.Link as={Link} to="tel:6045555555">
-              (604) 555-5555
-            </Nav.Link>
+            <Nav.Link href="tel:6047731238">(604) 773-1238</Nav.Link>
             <Nav.Link as={Link} to="/contact">
               Get a estimate
             </Nav.Link>
