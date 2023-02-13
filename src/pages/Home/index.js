@@ -85,7 +85,7 @@ export function HomePage() {
         </div>
         <div
           style={{
-            marginTop: "-1rem",
+            marginTop: "-.5rem",
             height: "1rem",
             borderRadius: ".25rem .25rem 0 0",
             backgroundColor: "white",
