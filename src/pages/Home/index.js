@@ -2,13 +2,13 @@
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import hedge from "../../images/hedge_bg.png";
-import hedgeTrimming from "../../images/services/hedge_trimming.jpeg";
-import lawnMower from "../../images/services/lawn_mower.jpeg";
-import shrubPruning from "../../images/services/shrub_pruning.jpeg";
-import weeding from "../../images/services/weeding.jpeg";
-import yardCleanup from "../../images/services/yard_cleanup.jpeg";
-import multch from "../../images/services/multch.jpeg";
-import washing from "../../images/services/washing.jpeg";
+import hedgeTrimming from "../../images/services/hedge_trimming.png";
+import lawnMower from "../../images/services/lawn_mower.png";
+import shrubPruning from "../../images/services/shrub_pruning.png";
+import weeding from "../../images/services/weeding.png";
+import yardCleanup from "../../images/services/yard_cleanup.png";
+import multch from "../../images/services/multch.png";
+import washing from "../../images/services/washing.png";
 import "./style.scss";
 
 export function HomePage() {
