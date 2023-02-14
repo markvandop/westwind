@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Row, Col, Card } from "react-bootstrap";
+import { Form, Button, Row, Col, Card, Link } from "react-bootstrap";
 import { HiMail, HiPhone } from "react-icons/hi";
 import "./style.scss";
 
@@ -100,13 +100,29 @@ export function Contact() {
           <Col md={4}>
             <Card className="contact-info">
               <Card.Body>
-                <Card.Title>Our Information</Card.Title>
+                <Card.Title>Drop us a line!</Card.Title>
                 <Card.Text>
-                  <HiMail /> info@westwindpm.co
+                  Send us an email or call us for a quote for your project, and
+                  we will find something to fit your needs.
                 </Card.Text>
                 <Card.Text>
+                  Contact Richard Vandop:
+                  <br />
                   <HiPhone />
-                  (604) 773-1238
+                  <a
+                    href="tel:6047731238"
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "none",
+                      color: "#595959",
+                    }}
+                  >
+                    (604) 773-1238
+                  </a>
+                </Card.Text>
+                <Card.Text>
+                  <HiMail />
+                  info@westwindpm.co
                 </Card.Text>
               </Card.Body>
             </Card>
