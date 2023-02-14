@@ -3,7 +3,7 @@
 body {
   color: #2d2d2d;
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .App-main {
@@ -35,16 +35,4 @@ p,
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 2px;
-}
-
-.contact-info {
-  margin-top: 1rem;
-  @media (min-width: 768px) {
-    margin-top: 0rem;
-  }
-
-  svg {
-    margin-right: 0.5rem;
-    transform: scale(1.05);
-  }
 }

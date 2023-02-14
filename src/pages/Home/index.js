@@ -9,6 +9,7 @@ import weeding from "../../images/services/weeding.jpg";
 import yardCleanup from "../../images/services/yard_cleanup.jpg";
 import multch from "../../images/services/multch.jpg";
 import washing from "../../images/services/washing.jpg";
+
 import "./style.scss";
 
 export function HomePage() {
@@ -61,7 +62,7 @@ export function HomePage() {
     <>
       <header style={{ paddingLeft: 0 }}>
         <div
-          className="p-5 text-center bg-image"
+          className="text-center bg-image"
           style={{
             backgroundImage: `url(${hedge})`,
             backgroundSize: "cover",
@@ -70,16 +71,15 @@ export function HomePage() {
           }}
         >
           <div className="d-flex justify-content-center align-items-center h-100">
-            <div className="text-white">
-              <h1
-                style={{
-                  fontSize: "3rem",
-                  fontStyle: "italic",
-                  textShadow: "rgb(0 0 0) 3px 4px 7px",
-                }}
-              >
-                Get the jump on Spring!
-              </h1>
+            <div className="text-white hero-wrapper">
+              <h1 className="hero-text">Garden and Lawn Care</h1>
+
+              <div className="m-3 text-center">
+                <Button as={Link} to="contact">
+                  Request a free quote
+                </Button>
+              </div>
+              <div className="hero-sub-text">Get the jump on Spring!</div>
             </div>
           </div>
         </div>
@@ -89,6 +89,7 @@ export function HomePage() {
             height: "1rem",
             borderRadius: ".25rem .25rem 0 0",
             backgroundColor: "white",
+            position: "relative",
           }}
         ></div>
       </header>
@@ -107,11 +108,6 @@ export function HomePage() {
             individualised services that are tailored to your unique demands
             because of this.
           </p>
-          <div className="mb-3 text-center">
-            <Button as={Link} to="contact">
-              Request a free quote
-            </Button>
-          </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
             {items.map((item, index) => (
