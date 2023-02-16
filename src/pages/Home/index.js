@@ -9,7 +9,7 @@ import weeding from "../../images/services/weeding.jpg";
 import yardCleanup from "../../images/services/yard_cleanup.jpg";
 import multch from "../../images/services/multch.jpg";
 import washing from "../../images/services/washing.jpg";
-import location from "../../images/location.jpg";
+//import location from "../../images/location.jpg";
 import cardboard from "../../images/cardboard.png";
 
 import "./style.scss";
@@ -118,19 +118,10 @@ export function HomePage() {
             <div className="location-text">
               Westwind Property Maintenance is committed to offering complete
               services to satisfy all of your landscaping and property upkeep
-              requirements. We are dedicated to using the most up-to-date
-              methods and tools to meet and surpass your expectations. We offer
-              the knowledge and tools necessary to execute any project, from
-              routine grass maintenance to a landscape restoration.We are aware
-              that every property is different and needs a customised strategy.
-              We provide individualised services that are tailored to your
-              unique demands because of this.
+              requirements. We're aware that every property is different and
+              needs a customised strategy. We provide individualised services
+              that are tailored to your unique demands because of this.
             </div>
-            <img
-              src={location}
-              alt="location pin icon"
-              className="location-pin"
-            />
           </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
@@ -148,10 +139,65 @@ export function HomePage() {
             ))}
           </div>
 
-          <div className="mt-4 mb-3 text-center">
+          <div className="mt-4 mb-4 text-center">
             <Button as={Link} to="contact">
               Request a free quote
             </Button>
+          </div>
+
+          <div className="faq">
+            <h3>FAQ About Lawn Maintenance in the Lower Mainland</h3>
+            <div className="mb-2">
+              Maintaining a lawn in British Columbia, Canada can be challenging
+              due to the region's varying weather conditions, including periods
+              of drought, heavy rainfall, and cold temperatures. However, there
+              are several steps you can take to keep your lawn looking healthy
+              and vibrant.
+            </div>
+            <div className="d-flex flex-column" style={{ gap: "1rem" }}>
+              <div>
+                <h5 className="mb-1">Watering</h5>
+                Watering your lawn is crucial for its health, especially during
+                the hot summer months. Water your lawn in the early morning or
+                evening to reduce evaporation, and be sure to avoid
+                over-watering, which can lead to the growth of fungus and other
+                problems.
+              </div>
+              <div>
+                <h5 className="mb-1">Fertilization</h5>
+                Regular fertilization is essential for a healthy lawn. Apply a
+                high-quality fertilizer with the correct balance of nitrogen,
+                phosphorus, and potassium to promote healthy growth and strong
+                roots.
+              </div>
+              <div>
+                <h5 className="mb-1">Mowing</h5>
+                Mowing is necessary to keep your lawn looking neat and tidy, but
+                be sure to mow it correctly. Cut only the top one-third of the
+                grass blades, and don't cut your lawn too short, as this can
+                weaken the grass and make it more susceptible to disease and
+                pests.
+              </div>
+              <div>
+                <h5 className="mb-1">Aeration</h5>
+                Aerating your lawn can improve air and water circulation in the
+                soil, which helps to promote healthy root growth. You can rent
+                an aerator or hire a lawn care professional to do this for you.
+              </div>
+              <div>
+                <h5 className="mb-1">Weed and pest control</h5>
+                Weeds and pests can quickly take over a lawn, so it's important
+                to stay on top of them. Regularly remove weeds by hand, and use
+                an appropriate herbicide if necessary. Consider using natural
+                pest control methods to avoid harming beneficial insects.
+              </div>
+              <div>
+                <h5 className="mb-1">Soil testing</h5>
+                Test your soil every few years to determine if it has the proper
+                pH balance and nutrient levels. Adjust your lawn care regimen
+                accordingly if the soil test reveals any imbalances.
+              </div>
+            </div>
           </div>
         </main>
       </div>

@@ -73,12 +73,13 @@
     flex-direction: row;
     gap: 1rem;
   }
-  .location-pin {
-    display: block;
-    margin: 0 auto;
-    width: 166px;
-    height: 135px;
-  }
-  .location-text {
+}
+
+.faq {
+  color: #595959;
+
+  h3,
+  h5 {
+    color: #2d2d2d;
   }
 }
