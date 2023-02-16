@@ -147,14 +147,14 @@ export function HomePage() {
 
           <div className="faq">
             <h3>FAQ About Lawn Maintenance in the Lower Mainland</h3>
-            <div className="mb-2">
-              Maintaining a lawn in British Columbia, Canada can be challenging
-              due to the region's varying weather conditions, including periods
-              of drought, heavy rainfall, and cold temperatures. However, there
-              are several steps you can take to keep your lawn looking healthy
-              and vibrant.
-            </div>
             <div className="d-flex flex-column" style={{ gap: "1rem" }}>
+              <div>
+                Maintaining a lawn in British Columbia, Canada can be
+                challenging due to the region's varying weather conditions,
+                including periods of drought, heavy rainfall, and cold
+                temperatures. However, there are several steps you can take to
+                keep your lawn looking healthy and vibrant.
+              </div>
               <div>
                 <h5 className="mb-1">Watering</h5>
                 Watering your lawn is crucial for its health, especially during

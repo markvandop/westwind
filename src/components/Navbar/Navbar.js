@@ -16,10 +16,10 @@ const MainNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto flex ">
-            <Nav.Link as={Link} to="/">
+            {/* <Nav.Link as={Link} to="/">
               Our services
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/testimonials">
+            <Nav.Link as={Link} to="/testimonials">
               Testimonials
             </Nav.Link> */}
           </Nav>
