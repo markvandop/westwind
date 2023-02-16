@@ -1,12 +1,15 @@
 .service-cards {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
 
   .card {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+    border-radius: 0.25rem;
   }
 
   .card-body {
@@ -24,14 +27,13 @@
 }
 
 .bg-image {
-  height: 200px;
+  height: 230px;
   @media (min-width: 768px) {
-    height: 300px;
+    height: 450px;
   }
 }
 
 .hero-wrapper {
-  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   display: flex;
@@ -42,12 +44,17 @@
 }
 
 .hero-text {
-  font-weight: 700;
+  color: #fefefe;
+  font-family: "Staatliches", cursive;
+  font-weight: 400;
   font-style: italic;
-  font-size: 2.75rem;
-  text-shadow: rgb(0 0 0 / 30%) 3px 3px 1px;
+  font-size: 3.275rem;
+  text-shadow: rgb(0 0 0 / 30%) 3px 3px 5px;
+  margin-bottom: 0;
+  padding: 0 1rem;
   @media (min-width: 768px) {
-    font-size: 3.875rem;
+    font-size: 4.725rem;
+    text-shadow: rgb(0 0 0 / 60%) 3px 3px 5px;
   }
 }
 
@@ -57,5 +64,21 @@
   text-shadow: rgba(0, 0, 0, 0.3) 3px 3px 1px;
   @media (min-width: 768px) {
     font-size: 1.75rem;
+  }
+}
+
+.location-block {
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .location-pin {
+    display: block;
+    margin: 0 auto;
+    width: 166px;
+    height: 135px;
+  }
+  .location-text {
   }
 }

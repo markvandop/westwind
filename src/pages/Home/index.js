@@ -9,6 +9,8 @@ import weeding from "../../images/services/weeding.jpg";
 import yardCleanup from "../../images/services/yard_cleanup.jpg";
 import multch from "../../images/services/multch.jpg";
 import washing from "../../images/services/washing.jpg";
+import location from "../../images/location.jpg";
+import cardboard from "../../images/cardboard.png";
 
 import "./style.scss";
 
@@ -70,10 +72,25 @@ export function HomePage() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="d-flex justify-content-center align-items-center h-100">
+          <div
+            className="d-flex justify-content-center align-items-center h-100"
+            style={{ position: "relative" }}
+          >
             <div className="text-white hero-wrapper">
               <h1 className="hero-text">Garden and Lawn Care</h1>
 
+              <div
+                style={{
+                  backgroundImage: `url(${cardboard})`,
+                  opacity: ".25",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  pointerEvents: "none",
+                }}
+              />
               <div className="m-3 text-center">
                 <Button as={Link} to="contact">
                   Request a free quote
@@ -97,21 +114,28 @@ export function HomePage() {
       <div className="container">
         <main className="App-main">
           <h3>Serving the Lower Mainland</h3>
-          <p>
-            Westwind Property Maintenance is committed to offering complete
-            services to satisfy all of your landscaping and property upkeep
-            requirements. We are dedicated to using the most up-to-date methods
-            and tools to meet and surpass your expectations. We offer the
-            knowledge and tools necessary to execute any project, from routine
-            grass maintenance to a landscape restoration.We are aware that every
-            property is different and needs a customised strategy. We provide
-            individualised services that are tailored to your unique demands
-            because of this.
-          </p>
+          <div className="d-flex location-block">
+            <div className="location-text">
+              Westwind Property Maintenance is committed to offering complete
+              services to satisfy all of your landscaping and property upkeep
+              requirements. We are dedicated to using the most up-to-date
+              methods and tools to meet and surpass your expectations. We offer
+              the knowledge and tools necessary to execute any project, from
+              routine grass maintenance to a landscape restoration.We are aware
+              that every property is different and needs a customised strategy.
+              We provide individualised services that are tailored to your
+              unique demands because of this.
+            </div>
+            <img
+              src={location}
+              alt="location pin icon"
+              className="location-pin"
+            />
+          </div>
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
             {items.map((item, index) => (
-              <Card>
+              <Card tabIndex={1} aria-label={item.title}>
                 <Card.Img
                   variant="top"
                   src={item.image ? item.image : "https://placehold.co/600x300"}
