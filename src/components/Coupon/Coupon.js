@@ -7,7 +7,7 @@ import cardboard from "../../images/cardboard.png";
 const Coupon = () => {
   return (
     <div className="coupon-card">
-      <h3>This year, get the jump on Spring!</h3>
+      <h3>This year, get the jump on Spring and Fall cleanup!</h3>
       <h5>15% off on all services</h5>
       <div
         style={{
@@ -19,7 +19,7 @@ const Coupon = () => {
           right: 0,
           bottom: 0,
           pointerEvents: "none",
-          borderRadius: "0.875rem",
+          borderRadius: "0.25rem",
         }}
       />
       <Button as={Link} to="contact" style={{ marginTop: ".5rem" }}>
