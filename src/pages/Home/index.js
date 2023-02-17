@@ -188,11 +188,10 @@ export function HomePage() {
                 an aerator or hire a lawn care professional to do this for you.
               </div>
               <div>
-                <h5 className="mb-1">Weed and pest control</h5>
-                Weeds and pests can quickly take over a lawn, so it's important
-                to stay on top of them. Regularly remove weeds by hand, and use
-                an appropriate herbicide if necessary. Consider using natural
-                pest control methods to avoid harming beneficial insects.
+                <h5 className="mb-1">Weeds</h5>
+                Weeds can quickly take over a lawn, so it's important to stay on
+                top of them. Regularly remove weeds by hand, and use an
+                appropriate herbicide if necessary.
               </div>
               <div>
                 <h5 className="mb-1">Soil testing</h5>
