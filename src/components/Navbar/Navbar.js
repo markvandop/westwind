@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const MainNavbar = () => {
   return (
-    <Navbar className="navbar-dark" expand="lg">
+    <Navbar className="sticky-top navbar-dark" expand="lg">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Westwind Property Management logo" />
