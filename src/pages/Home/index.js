@@ -108,18 +108,24 @@ export function HomePage() {
 
       <div className="container">
         <main className="App-main">
-          <h3>Serving the Lower Mainland</h3>
-          <div className="d-flex location-block">
-            <div className="location-text">
-              Westwind Property Maintenance is committed to offering complete
-              services to satisfy all of your landscaping and property upkeep
-              requirements. We're aware that every property is different and
-              needs a customised strategy. We provide individualised services
-              that are tailored to your unique demands because of this.
+          <div className="row">
+            <div className="col-lg-7">
+              <h3>Serving the Lower Mainland</h3>
+              <div className="d-flex location-block">
+                <div className="location-text">
+                  Westwind Property Maintenance is committed to offering
+                  complete services to satisfy all of your landscaping and
+                  property upkeep requirements. We're aware that every property
+                  is different and needs a customised strategy. We provide
+                  individualised services that are tailored to your unique
+                  demands because of this.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <Coupon />
             </div>
           </div>
-          <Coupon />
-
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
             {items.map((item, index) => (
