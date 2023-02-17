@@ -1,6 +1,7 @@
 //import logo from '../../logo.svg';
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Coupon from "../../components/Coupon/Coupon";
 import hedge from "../../images/hedge_bg.jpg";
 import hedgeTrimming from "../../images/services/hedge_trimming.jpg";
 import lawnMower from "../../images/services/lawn_mower.jpg";
@@ -91,12 +92,6 @@ export function HomePage() {
                   pointerEvents: "none",
                 }}
               />
-              <div className="m-3 text-center">
-                <Button as={Link} to="contact">
-                  Request a free quote
-                </Button>
-              </div>
-              <div className="hero-sub-text">Get the jump on Spring!</div>
             </div>
           </div>
         </div>
@@ -123,6 +118,8 @@ export function HomePage() {
               that are tailored to your unique demands because of this.
             </div>
           </div>
+          <Coupon />
+
           <h3 className="mt-4 mb-3">Our Services</h3>
           <div className="service-cards">
             {items.map((item, index) => (
