@@ -6,6 +6,7 @@ import { Testimonials } from "./pages/Testimonials";
 import MainNavbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "react-bootstrap";
+import ScrollToTop from "./components/scrollToTop";
 
 const App = () => (
   <ThemeProvider
@@ -13,6 +14,7 @@ const App = () => (
     minBreakpoint="xxs"
   >
     <BrowserRouter>
+      <ScrollToTop />
       <MainNavbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
