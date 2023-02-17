@@ -126,7 +126,7 @@ export function Contact() {
                 />
               </Form.Group>
               <Button variant="primary" type="submit">
-                Request a free quote
+                Send message
               </Button>
             </Form>
           </Col>
