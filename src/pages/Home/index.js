@@ -97,7 +97,7 @@ export function HomePage() {
                     <strong>Nickname</strong> A "Professional" Driver
                   </div>
                   <div className="driver-info-item">
-                    <strong>Birthdate</strong> February 12, 1983
+                    <strong>Birthdate</strong> February 15, 1983
                   </div>
                 </div>
               </div>
