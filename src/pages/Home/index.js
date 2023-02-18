@@ -1,14 +1,5 @@
 //import logo from '../../logo.svg';
-import { Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Coupon from "../../components/Coupon/Coupon";
 import truck from "../../images/truck.jpg";
-import hedgeTrimming from "../../images/services/hedge_trimming.jpg";
-import lawnMower from "../../images/services/lawn_mower.jpg";
-import shrubPruning from "../../images/services/shrub_pruning.jpg";
-import weeding from "../../images/services/weeding.jpg";
-import yardCleanup from "../../images/services/yard_cleanup.jpg";
-import multch from "../../images/services/multch.jpg";
 import cad from "../../images/cad.png";
 import jon from "../../images/jon_avatar.png";
 //import location from "../../images/location.jpg";
