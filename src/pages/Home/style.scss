@@ -103,6 +103,13 @@
   }
 }
 
+.mesh-bg {
+  background-size: contain;
+  @media (min-width: 768px) {
+    background-size: cover;
+  }
+}
+
 .hero-wrapper {
   width: 100%;
   height: 100%;

@@ -53,9 +53,9 @@ export function HomePage() {
       <main className="flex-row">
         <div className="main-wrapper">
           <div
+            className="mesh-bg"
             style={{
               backgroundImage: `url(${mesh})`,
-              backgroundSize: "contain",
               opacity: ".85",
               position: "absolute",
               top: 0,
@@ -103,7 +103,7 @@ export function HomePage() {
                     <strong>Hometown</strong> Vancouver, British Columbia
                   </div>
                   <div className="driver-info-item">
-                    <strong>Nickname</strong> A "Professional" Driver
+                    <strong>Nickname</strong> The Professional
                   </div>
                   <div className="driver-info-item">
                     <strong>Birthdate</strong> February 15, 1983
