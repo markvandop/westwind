@@ -55,7 +55,7 @@ export function HomePage() {
           <div
             style={{
               backgroundImage: `url(${mesh})`,
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               opacity: ".85",
               position: "absolute",
               top: 0,
