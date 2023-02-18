@@ -97,6 +97,9 @@ export function HomePage() {
                     Inclusion Total Off Road Intense Society
                   </div>
                   <div className="driver-info-item">
+                    <strong>Motto</strong> All trucks and zero fucks
+                  </div>
+                  <div className="driver-info-item">
                     <strong>Hometown</strong> Richmond, British Columbia
                   </div>
                   <div className="driver-info-item">
