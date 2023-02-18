@@ -81,7 +81,7 @@ export function HomePage() {
                 </div>
                 <div className="driver-info">
                   <div className="driver-info-item">
-                    <strong>2023 Truck</strong> The Spot
+                    <strong>2023 Truck</strong> A Good Feeling, Yerr
                   </div>
                   <div className="driver-info-item">
                     <strong>2023 Tour Highlights</strong> Codlings Limited
@@ -91,7 +91,7 @@ export function HomePage() {
                     <strong>Motto</strong> All trucks and zero fucks
                   </div>
                   <div className="driver-info-item">
-                    <strong>Hometown</strong> Richmond, British Columbia
+                    <strong>Hometown</strong> Vancouver, British Columbia
                   </div>
                   <div className="driver-info-item">
                     <strong>Nickname</strong> A "Professional" Driver
@@ -110,12 +110,12 @@ export function HomePage() {
               <p>
                 Jon Codling’s rookie season was one of the biggest Codlings
                 Limited Inclusion Total Off Road Intense Society of 1995. The
-                youngest of the Codling’s siblings, Jon was placed in Grave
-                Digger on the C.L.I.T.O.R.I.S tour. He didn’t take long to make
-                a mark, winning the 2-Wheel Skills competition in his very first
-                Monster Jam event. He proved to be a natural and went on to win
-                the tour championship in his rookie season, which vaulted him to
-                Co-Rookie of the Year for 1995.
+                youngest of the Codling’s siblings, Jon was placed in{" "}
+                <b>A Good Feeling, Yerr</b> on the <b>C.L.I.T.O.R.I.S</b> tour.
+                He didn’t take long to make a mark, winning the 2-Finger Skills
+                competition in his very first Monster Jam event. He proved to be
+                a natural and went on to win the tour championship in his rookie
+                season, which vaulted him to Co-Rookie of the Year for 1995.
               </p>
             </div>
           </div>
