@@ -1,35 +1,105 @@
-.service-cards {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-
-  .card {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 0;
-    box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
-    border-radius: 0.25rem;
-  }
-
-  .card-body {
-    border-top: 4px solid #7bb03c;
-  }
-
-  .card-text {
-    color: #595959;
-    font-size: 0.875rem;
-  }
-
-  img {
-    aspect-ratio: 2/1;
-  }
-}
-
 .bg-image {
   height: 230px;
   @media (min-width: 768px) {
-    height: 350px;
+    height: 450px;
+  }
+}
+
+.driver-main .main-profile {
+  width: 190px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-top: -104px;
+}
+
+.main-side,
+.main-profile {
+  position: relative;
+}
+
+.main-side {
+  width: 100%;
+}
+
+.driver-info {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  color: #fff;
+  .driver-info-item {
+    display: block;
+    max-width: 310px;
+  }
+
+  strong {
+    color: #ffc800;
+    display: block;
+  }
+}
+
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -4.375rem;
+  text-align: center;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
+    margin-top: -9.375rem;
+    text-align: left;
+  }
+}
+
+.profile-photo {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 5px solid #ffc800;
+  width: 190px;
+  height: 190px;
+  position: relative;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+
+.profile-location img {
+  display: inline-block;
+  max-width: 30px;
+  max-height: 20px;
+}
+
+.profile-head {
+  h1 {
+    font-family: Staatliches, cursive;
+    font-size: 4rem;
+    color: #ffc800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.main-wrapper {
+  padding: 2rem;
+  background-color: #2d2d2d;
+  border-top: 5px solid #ffc800;
+  position: relative;
+
+  .container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+    @media (min-width: 768px) {
+      gap: 2rem;
+      flex-direction: row;
+    }
   }
 }
 

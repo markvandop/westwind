@@ -5,12 +5,14 @@
   background-color: #363636;
   align-items: center;
   padding: 0.5rem;
-  border-bottom: 4px solid #7bb03c;
+  border-bottom: 4px solid #ffc800;
 
   img {
-    width: 200px;
-    height: 53px;
-    padding: 0.35rem 0;
+    width: 140px;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    top: 0.75rem;
   }
 
   a {
@@ -23,5 +25,11 @@
     &:hover {
       color: #7bb03c;
     }
+  }
+
+  .nav-text {
+    font-size: 1.725rem;
+    color: #ffc800;
+    font-family: "Staatliches", cursive;
   }
 }
