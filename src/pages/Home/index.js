@@ -109,13 +109,13 @@ export function HomePage() {
             <div className="p-4">
               <p>
                 Jon Codling’s rookie season was one of the biggest Codlings
-                Limited Inclusion Total Off Road Intense Society of 1995. The
+                Limited Inclusion Total Off Road Intense Society of 2022. The
                 youngest of the Codling’s siblings, Jon was placed in{" "}
                 <b>A Good Feeling, Yerr</b> on the <b>C.L.I.T.O.R.I.S</b> tour.
                 He didn’t take long to make a mark, winning the 2-Finger Skills
                 competition in his very first Monster Jam event. He proved to be
                 a natural and went on to win the tour championship in his rookie
-                season, which vaulted him to Co-Rookie of the Year for 1995.
+                season, which vaulted him to Co-Rookie of the Year for 2022.
               </p>
             </div>
           </div>
