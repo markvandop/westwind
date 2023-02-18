@@ -5,10 +5,17 @@ import jon from "../../images/jon_avatar.png";
 //import location from "../../images/location.jpg";
 import cardboard from "../../images/cardboard.png";
 import mesh from "../../images/ico-dots-hq.jpeg";
+import soundClip from "../../images/clip.m4a";
 
 import "./style.scss";
 
 export function HomePage() {
+  let audio = new Audio(soundClip);
+
+  const start = () => {
+    audio.play();
+  };
+
   return (
     <>
       <header style={{ paddingLeft: 0 }}>
@@ -62,6 +69,8 @@ export function HomePage() {
             <div className="container">
               <div class="main-profile">
                 <div
+                  as="button"
+                  onClick={start}
                   class="profile-photo"
                   style={{
                     backgroundImage: `url(${jon})`,
