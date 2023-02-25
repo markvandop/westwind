@@ -155,7 +155,7 @@ export function Contact() {
                 </Card.Text>
                 <Card.Text>
                   <HiMail />
-                  info@westwindpm.co
+                  contact@westwindpm.co
                 </Card.Text>
               </Card.Body>
             </Card>
