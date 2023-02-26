@@ -8,7 +8,7 @@ const Coupon = () => {
   return (
     <div className="coupon-card">
       <h3>This year, get the jump on Spring and Fall cleanup!</h3>
-      <h5>15% off on all services</h5>
+      <h5>10% off on all services</h5>
       <div
         style={{
           backgroundImage: `url(${cardboard})`,
